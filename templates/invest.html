@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipsmakerfx | Learn</title>
+    <link rel="shortcut icon" type="image/jpg" href="../static/images/favicon.png" />
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="../static/invest.css">
+</head>
+
+<body>
+    <div class='spinner-wrapper'>
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <!-- Start of Async Drift Code -->
+        <script>
+            "use strict";
+
+            ! function() {
+                var t = window.driftt = window.drift = window.driftt || [];
+                if (!t.init) {
+                    if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+                    t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                        t.factory = function(e) {
+                            return function() {
+                                var n = Array.prototype.slice.call(arguments);
+                                return n.unshift(e), t.push(n), t;
+                            };
+                        }, t.methods.forEach(function(e) {
+                            t[e] = t.factory(e);
+                        }), t.load = function(t) {
+                            var e = 3e5,
+                                n = Math.ceil(new Date() / e) * e,
+                                o = document.createElement("script");
+                            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                            var i = document.getElementsByTagName("script")[0];
+                            i.parentNode.insertBefore(o, i);
+                        };
+                }
+            }();
+            drift.SNIPPET_VERSION = '0.3.1';
+            drift.load('9t8fmicserxi');
+        </script>
+        <!-- End of Async Drift Code -->
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="/">
+                        <img src="images/white favicon.png" alt="">
+                    </a>
+                </div>
+
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="/explore" class="nav-link current">Explore</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="/learn" class="nav-link">learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="main-message">
+                    <h1>invest</h1>
+                    <p>
+                        Accelerate your growth and achieve excellence through Account Management.</p>
+                    <div class="cta">
+                        <a href="/explore" class="btn">Enroll</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="begin-adventure">
+            <div class="container">
+                <a href="/contact" class="btn">contact us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 Pipsmakerfx. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        //Function expression to select element
+        const selectElement = (s) => document.querySelector(s);
+        //Open the menu on click
+        selectElement('.open').addEventListener('click', () => {
+            selectElement('.nav-list').classList.add('active');
+        });
+        //Close the menu on click
+        selectElement('.close').addEventListener('click', () => {
+            selectElement('.nav-list').classList.remove('active');
+        });
+
+        let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+        window.addEventListener('load', function() {
+            // spinnerWrapper.style.display = 'none';
+            spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+        });
+    </script>
+
+</body>
+
+</html>

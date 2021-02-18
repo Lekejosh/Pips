@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipsmakerfx | Explore</title>
+    <link rel="shortcut icon" type="image/jpg" href="../static/images/favicon.png" />
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="../static/explore.css">
+</head>
+
+<body>
+    <div class='spinner-wrapper'>
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="/">
+                        <img src="images/white favicon.png" alt="">
+                    </a>
+                </div>
+
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link current">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/invest" class="nav-link">Invest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/learn" class="nav-link">Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="main-message">
+                    <h1>Explore</h1>
+                    <p>What if there was a way for you to build a better life & experience more happiness & fulfillment?</p>
+                    <div class="cta">
+                        <a href="/contact" class="btn">Contact us</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="title-heading">
+                    <h3>What do you get</h3>
+                    <h1>Everything you need</h1>
+                    <p>Hey chief, What you’re getting when you enroll onto Pipsmakerfx is a full mentorship provided by some of the finest traders.
+                        <strong>Pipsmakerfx focuses on one trading style material only from Inner Circle Trader.</strong> There are 1000s of ways to make money in the markets, so when it comes to trading, Pipsmakerfx gives you three different perspectives
+                        on how to become a profitable trader based off different trading styles. Pipsmakerfx contains a full online educational platform that gives you step by step phases that educates you on how to trade. There is no prior knowledge
+                        needed to enroll. Pipsmakerfx goes over Psychology training, steps to set up the platform onto your device, technical analysis training phases, past recorded webinars, and downloadable files.</p>
+                </div>
+
+                <div class="activities-grid">
+                    <!--grid item #1-->
+                    <div class="activities-grid-item learn">
+                        <i class="icon ion-md-bonfire"></i>
+                        <h1>Invest.</h1>
+                        <p>Accelerate your growth and achieve excellence through Account Management.</p>
+                    </div>
+
+                    <!--grid item #2-->
+                    <div class="activities-grid-item learn">
+                        <i class="icon ion-md-bonfire"></i>
+                        <h1>Learn.</h1>
+                        <p>Gain mastery over markets that empowers people to be more self sufficient allowing the pursuit of a passionate, fulfilling and purpose driven life.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="begin-adventure">
+            <div class="container">
+                <a href="/contact" class="btn">contact us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 Pipsmakerfx. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        //Function expression to select element
+        const selectElement = (s) => document.querySelector(s);
+        //Open the menu on click
+        selectElement('.open').addEventListener('click', () => {
+            selectElement('.nav-list').classList.add('active');
+        });
+        //Close the menu on click
+        selectElement('.close').addEventListener('click', () => {
+            selectElement('.nav-list').classList.remove('active');
+        });
+
+        let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+        window.addEventListener('load', function() {
+            // spinnerWrapper.style.display = 'none';
+            spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+        });
+    </script>
+
+</body>
+
+</html>
