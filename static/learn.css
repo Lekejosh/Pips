@@ -1,4 +1,5 @@
 /*Global Styles*/
+
 *,
 *::before,
 *::after {
@@ -35,8 +36,10 @@ section {
     padding: 5rem 0;
 }
 
+
 /*spinner*/
-.spinner-wrapper{
+
+.spinner-wrapper {
     width: 100%;
     height: 100%;
     background-color: #151515;
@@ -57,7 +60,7 @@ section {
 }
 
 .spinner::before,
-.spinner:after{
+.spinner:after {
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -66,9 +69,10 @@ section {
 .spinner:before {
     width: 100%;
     height: 100%;
-    background-image:linear-gradient(90deg, #ff00cc 0%,#333399 100% );
+    background-image: linear-gradient(90deg, #ff00cc 0%, #333399 100%);
     animation: spin .5s infinite linear;
 }
+
 .spinner:after {
     width: 90%;
     height: 90%;
@@ -82,9 +86,11 @@ section {
     to {
         transform: rotate(360deg);
     }
-
 }
+
+
 /*Header*/
+
 header {
     width: 100%;
     height: 5rem;
@@ -161,11 +167,11 @@ nav {
 
 
 /*hero*/
+
 .hero {
     width: 100%;
     height: 80vh;
-    background: linear-gradient(135deg, rgba(0, 0, 51, 0.8) 0%, 
-    rgba(75, 73, 82, 0.8) 100%), url("images/learn.jpg") center no-repeat fixed;
+    background: linear-gradient(135deg, rgba(0, 0, 51, 0.8) 0%, rgba(75, 73, 82, 0.8) 100%), url("images/learn.jpg") center no-repeat fixed;
     background-size: cover;
     position: relative;
 }
@@ -220,6 +226,7 @@ nav {
 
 
 /*Experience the outdoors*/
+
 .features {
     padding: 0;
 }
@@ -247,6 +254,13 @@ nav {
 }
 
 
+/* About */
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
 
 footer {
     padding: 2.5rem 0;
@@ -255,7 +269,9 @@ footer {
     color: rgba(0, 0, 0, .7);
 }
 
+
 /*Media queries*/
+
 @media screen and (min-width: 350px) {
     .main-message {
         transform: translateY(40%);
@@ -268,7 +284,6 @@ footer {
         background: url("images/wave-medium.png");
         background-size: cover;
     }
-
     .quotes::before {
         height: 9.4rem;
         background: url("images/wave-medium-reversed.png");
@@ -280,11 +295,9 @@ footer {
     header {
         height: 8rem;
     }
-
     .nav-brand {
         width: 3.5rem;
     }
-
     .nav-list {
         width: initial;
         height: initial;
@@ -295,22 +308,18 @@ footer {
         flex-direction: row;
         transition: initial;
     }
-
     .menu-icons {
         display: none;
     }
-
     .nav-item {
         margin: 0 2.5rem;
     }
-
     .nav-link,
     .current {
         color: #fafafa;
         position: relative;
         font-size: 1.3rem;
     }
-
     .nav-link::before,
     .current::before {
         content: "";
@@ -324,23 +333,18 @@ footer {
         transform-origin: left;
         transition: transform 650ms;
     }
-
     .current::before {
         transform: scaleX(1);
     }
-
     .nav-link:hover::before {
         transform: scaleX(1);
     }
-
     .hero {
         height: 60vh;
     }
-
     .main-message {
         transform: translateY(50%);
     }
-
     .title-heading h1 {
         font-size: 2.5rem;
     }
@@ -352,7 +356,6 @@ footer {
         background: url("images/wave-large.png");
         background-size: cover;
     }
-
     .quotes::before {
         height: 22.7rem;
         background: url("images/wave-large-reversed.png");
