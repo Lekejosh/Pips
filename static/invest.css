@@ -1,4 +1,5 @@
 /*Global Styles*/
+
 *,
 *::before,
 *::after {
@@ -35,8 +36,10 @@ section {
     padding: 5rem 0;
 }
 
+
 /*spinner*/
-.spinner-wrapper{
+
+.spinner-wrapper {
     width: 100%;
     height: 100%;
     background-color: #151515;
@@ -57,7 +60,7 @@ section {
 }
 
 .spinner::before,
-.spinner:after{
+.spinner:after {
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -66,9 +69,10 @@ section {
 .spinner:before {
     width: 100%;
     height: 100%;
-    background-image:linear-gradient(90deg, #ff00cc 0%,#333399 100% );
+    background-image: linear-gradient(90deg, #ff00cc 0%, #333399 100%);
     animation: spin .5s infinite linear;
 }
+
 .spinner:after {
     width: 90%;
     height: 90%;
@@ -82,9 +86,11 @@ section {
     to {
         transform: rotate(360deg);
     }
-
 }
+
+
 /*Header*/
+
 header {
     width: 100%;
     height: 5rem;
@@ -161,11 +167,11 @@ nav {
 
 
 /*hero*/
+
 .hero {
     width: 100%;
     height: 80vh;
-    background: linear-gradient(135deg, rgba(0, 0, 51, 0.8) 0%, 
-    rgba(75, 73, 82, 0.8) 100%), url("images/invest.jpg") center no-repeat fixed;
+    background: linear-gradient(135deg, rgba(0, 0, 51, 0.8) 0%, rgba(75, 73, 82, 0.8) 100%), url("images/invest.jpg") center no-repeat fixed;
     background-size: cover;
     position: relative;
 }
@@ -219,25 +225,310 @@ nav {
 }
 
 
-/*Experience the outdoors*/
-.pricing-container {
-    max-width: 960px;
-  }
-  
-  .pricing-header {
-    max-width: 700px;
-  }
-  
+/* About */
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+
+.learn-content {
+    padding-top: 20px;
+}
+
+.skills-bar p {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.progress-bar {
+    border-radius: 16px;
+}
+
+.progress {
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
 
 
-footer {
+/* Programs */
+
+#programs {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(001.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#programs h1 {
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+
+#programs h1::after {
+    content: " ";
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.programs {
+    margin-top: 40px;
+}
+
+.icon {
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    /* width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%; */
+}
+
+#programs p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+
+/* Price */
+
+#price {
+    padding: 40px 0;
+    background: #efefef;
+}
+
+.single-price {
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.single-price:hover {
+    box-shadow: 0 2px 20px #333;
+}
+
+.price-head {
+    background-color: #2196f3;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.price-head h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.price-head p {
+    font-size: 25px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#price span {
+    font-size: 15px;
+}
+
+.price-content {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.price-content ul li {
+    border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    list-style: none;
+}
+
+ul li:last-child {
+    border: none;
+}
+
+.fa-check-circle {
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.fa-times-circle {
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.price-button {
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.buy-btn {
+    background-color: #2196f3;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 50px;
+    transition: 0.5s;
+}
+
+.buy-btn:hover {
+    border-color: 1px solid #fff;
+    background-color: #3f51b5;
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+#price h1 {
+    text-align: center;
+    color: black !important;
+    padding-bottom: 10px;
+}
+
+#price h1::after {
+    content: " ";
+    background: black;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+
+/* footer {
     padding: 2.5rem 0;
     background-color: #d7d4ed;
     text-align: center;
     color: rgba(0, 0, 0, .7);
+} */
+
+footer {
+    padding: 7.9rem 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    position: relative;
 }
 
+.back-to-top {
+    width: 7rem;
+    height: 7rem;
+    background-color: #121212;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.back-to-top i {
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem;
+    animation: up 2s infinite;
+}
+
+.footer-content {
+    /*overflow: hidden;*/
+}
+
+.footer-content h4 {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
+
+.footer-content .asterisk {
+    margin: 2.4rem 0;
+}
+
+.footer-content-about {
+    margin-bottom: 5.4rem;
+}
+
+.footer-content-about p {
+    line-height: 2;
+}
+
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: #fff;
+    padding: .8rem 2rem;
+    opacity: .5;
+    transition: color .5s;
+}
+
+.social-icons i:hover,
+.social-icons i:focus {
+    color: var(--secondary-font-color);
+}
+
+.newsletter-form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-input {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+
+.newsletter-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--main-font-color-dark);
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1px .6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50px);
+    margin-left: 10.5rem;
+}
+
+
 /*Media queries*/
+
 @media screen and (min-width: 350px) {
     .main-message {
         transform: translateY(40%);
@@ -250,7 +541,6 @@ footer {
         background: url("images/wave-medium.png");
         background-size: cover;
     }
-
     .quotes::before {
         height: 9.4rem;
         background: url("images/wave-medium-reversed.png");
@@ -262,11 +552,9 @@ footer {
     header {
         height: 8rem;
     }
-
     .nav-brand {
         width: 3.5rem;
     }
-
     .nav-list {
         width: initial;
         height: initial;
@@ -277,22 +565,18 @@ footer {
         flex-direction: row;
         transition: initial;
     }
-
     .menu-icons {
         display: none;
     }
-
     .nav-item {
         margin: 0 2.5rem;
     }
-
     .nav-link,
     .current {
         color: #fafafa;
         position: relative;
         font-size: 1.3rem;
     }
-
     .nav-link::before,
     .current::before {
         content: "";
@@ -306,23 +590,18 @@ footer {
         transform-origin: left;
         transition: transform 650ms;
     }
-
     .current::before {
         transform: scaleX(1);
     }
-
     .nav-link:hover::before {
         transform: scaleX(1);
     }
-
     .hero {
         height: 60vh;
     }
-
     .main-message {
         transform: translateY(50%);
     }
-
     .title-heading h1 {
         font-size: 2.5rem;
     }
@@ -334,7 +613,6 @@ footer {
         background: url("images/wave-large.png");
         background-size: cover;
     }
-
     .quotes::before {
         height: 22.7rem;
         background: url("images/wave-large-reversed.png");
@@ -345,5 +623,18 @@ footer {
 @media screen and (min-width: 1200px) {
     .hero {
         height: 75vh;
+    }
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-1rem);
     }
 }
