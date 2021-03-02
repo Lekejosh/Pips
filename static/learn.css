@@ -205,9 +205,10 @@ nav {
     margin: 1rem 0;
 }
 
-.main-message p {
+
+/* .main-message p {
     text-transform: lowercase;
-}
+} */
 
 .btn {
     background-color: #eb648c;
