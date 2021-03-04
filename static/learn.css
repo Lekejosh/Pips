@@ -456,10 +456,6 @@ footer {
     animation: up 2s infinite;
 }
 
-.footer-content {
-    /*overflow: hidden;*/
-}
-
 .footer-content h4 {
     font-size: 1.9rem;
     text-transform: uppercase;
