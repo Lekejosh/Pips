@@ -12,6 +12,22 @@
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Ion Icons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../static/bootstrap-4.0.0-dist/css/bootstrap.css">
+    <script src="../static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/fontawesome.css">
+    <script src="fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/js/fontawesome.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <!--Our own stylesheet-->
     <link rel="stylesheet" href="../static/contact.css">
     <script src="../static/validate.js"></script>
@@ -23,34 +39,36 @@
     </div>
 
     <header>
-    <!-- Start of Async Drift Code -->
-<script>
-    "use strict";
-    
-    !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-          var i = document.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(o, i);
-        };
-      }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('9t8fmicserxi');
-    </script>
-    <!-- End of Async Drift Code -->
+        <!-- Start of Async Drift Code -->
+        <script>
+            "use strict";
+
+            ! function() {
+                var t = window.driftt = window.drift = window.driftt || [];
+                if (!t.init) {
+                    if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+                    t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                        t.factory = function(e) {
+                            return function() {
+                                var n = Array.prototype.slice.call(arguments);
+                                return n.unshift(e), t.push(n), t;
+                            };
+                        }, t.methods.forEach(function(e) {
+                            t[e] = t.factory(e);
+                        }), t.load = function(t) {
+                            var e = 3e5,
+                                n = Math.ceil(new Date() / e) * e,
+                                o = document.createElement("script");
+                            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                            var i = document.getElementsByTagName("script")[0];
+                            i.parentNode.insertBefore(o, i);
+                        };
+                }
+            }();
+            drift.SNIPPET_VERSION = '0.3.1';
+            drift.load('9t8fmicserxi');
+        </script>
+        <!-- End of Async Drift Code -->
         <div class="container">
             <nav>
                 <div class="nav-brand">
@@ -125,12 +143,40 @@
 
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2021 Pipsmakerfx. All rights reserved.</p>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-about animate-up">
+                    <h4>About PIPSMAKER FX</h4>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi quia eveniet ratione illum est odit. Quibusdam, delectus magni quod aperiam sint modi! Officia quaerat asperiores labore libero quisquam commodi fugit?</p>
+                </div>
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-menu">
+                        <h4>Follow US</h4>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-container">
+                        <h4>Contact US</h4>
+                        <form action="" class="newsletter-form">
+                            <input type="text" class="newsletter-input" placeholder="Your Email Address">
+                            <button class="newsletter-btn" type="submit">
+                            <i class="fas fa-envelop"></i>
+                        </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-
-
     <script>
         //Function expression to select element
         const selectElement = (s) => document.querySelector(s);
